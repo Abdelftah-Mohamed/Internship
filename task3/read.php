@@ -13,7 +13,7 @@
     <caption>List of users</caption>
     <thead class="table-success">
       <tr>
-        <th>#</th>
+        <th>id</th>
         <th>First</th>
         <th>Last</th>
         <th>Actions</th>
@@ -31,7 +31,8 @@
               echo "<td>" . $row["lname"] . "</td>";
               echo "<td>
                       <a href='edit.php?id=" . $row["id"] . "' class='btn btn-success btn-sm me-2'>Edit</a>
-                      <a href='delete.php?id=" . $row["id"] . "' class='btn btn-danger btn-sm'>Delete</a>
+                      <a href='delete.php?id=" . $row["id"] . "' class='btn btn-danger btn-sm me-2'>Delete</a>
+                      <a href='insert.php' class='btn btn-primary btn-sm'>Insert</a>
                     </td>";
               echo "</tr>";
           }
