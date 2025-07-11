@@ -1,7 +1,7 @@
 <?php
 include 'db.php';
 
-if (isset($_POST['submit'])) {
+if (isset($_POST['insert'])) {
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];
 
@@ -35,7 +35,7 @@ if (isset($_POST['submit'])) {
       <label for="lname" class="form-label">Last Name</label>
       <input type="text" class="form-control" id="lname" name="lname" required>
     </div>
-    <button type="submit" name="submit" class="btn btn-primary">Add User</button>
+    <button type="submit" name="insert" class="btn btn-primary">Add User</button>
     <a href="read.php" class="btn btn-secondary">Cancel</a>
   </form>
 </div>

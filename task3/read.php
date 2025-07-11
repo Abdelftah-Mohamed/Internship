@@ -10,7 +10,6 @@
 <body>
 <div class="container mt-5">
   <table class="table table-bordered table-hover">
-    <caption>List of users</caption>
     <thead class="table-success">
       <tr>
         <th>id</th>
